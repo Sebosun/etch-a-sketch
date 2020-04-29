@@ -3,11 +3,23 @@
 <html>
     <head>
         <title>Title</title>
-        
     </head>
+    
     <body>
     <h1>Etch a sketch</h1>
+    <main>
+        <div class="grid">
+        </div>        
+    </main>
+    <script>
+        const grid = document.querySelector('.grid');
         
+        for (let i = 0; i < 16*16; i++){
+            let div = document.createElement('div');
+//            div.textContent = i;
+            grid.appendChild(div);
+        }
         
+    </script>
     </body>
 </html>
