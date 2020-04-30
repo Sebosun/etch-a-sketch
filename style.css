@@ -17,13 +17,12 @@ main{
 
 .grid{
     display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 60%;
+/*    grid-template-columns: repeat(100, 1fr);*/
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    width: 32rem;
-    height: 32rem;
-	position:absolute;
+    width: 640px;
+    height: 640px;
+/*	position:absolute;*/
     left:0; right:0;
     top:0; bottom:0;
 	margin:auto;
@@ -34,7 +33,7 @@ main{
 
 .grid > div{
     background: #eee;
-/*    height: 1fr;*/
+
 }
 
 /*

@@ -7,16 +7,20 @@
     
     <body>
     <h1>Etch a sketch</h1>
+    <button id="reset">Reset</button>
+    <button id="random">Random Colour</button>
     <main>
         <div class="grid">
         </div>        
     </main>
     <script>
-        let gridSize = 50*50;
+        let gridSize = 16;
         const grid = document.querySelector('.grid');
-        for (let i = 0; i < gridSize; i++){
+        const resetButton = document.querySelector("#reset");
+        grid.style.cssText = `grid-template-columns: repeat(${gridSize}, 1fr)`;
+//        function generateGrid ()
+        for (let i = 0; i < gridSize ** 2; i++){
             let div = document.createElement('div');
-            div.style   
             grid.appendChild(div);
         }
         
@@ -27,6 +31,16 @@
                console.log(square);
                square.setAttribute('style', 'background: black');
            });
+        });
+        resetButton.addEventListener('click', () =>{
+            sketch.forEach((square) =>{
+                square.setAttribute('style', 'background: #eee');
+                gridSize = 4;
+                        for (let i = 0; i < gridSize ** 2; i++){
+            let div = document.createElement('div');
+            grid.appendChild(div);
+        }
+            });
         });
     </script>
     </body>
