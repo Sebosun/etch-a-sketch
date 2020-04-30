@@ -12,14 +12,22 @@
         </div>        
     </main>
     <script>
+        let gridSize = 50*50;
         const grid = document.querySelector('.grid');
-        
-        for (let i = 0; i < 16*16; i++){
+        for (let i = 0; i < gridSize; i++){
             let div = document.createElement('div');
-//            div.textContent = i;
+            div.style   
             grid.appendChild(div);
         }
         
+        let sketch = document.querySelectorAll(".grid > div");
+        
+        sketch.forEach((square) =>{
+           square.addEventListener('mouseenter', (e) => {
+               console.log(square);
+               square.setAttribute('style', 'background: black');
+           });
+        });
     </script>
     </body>
 </html>

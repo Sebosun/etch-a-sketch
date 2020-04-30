@@ -17,12 +17,12 @@ main{
 
 .grid{
     display:grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 60%;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    width: 500px;
-    height: 500px;
+    width: 32rem;
+    height: 32rem;
 	position:absolute;
     left:0; right:0;
     top:0; bottom:0;
@@ -34,9 +34,10 @@ main{
 
 .grid > div{
     background: #eee;
-    height: 2rem;
+/*    height: 1fr;*/
 }
 
+/*
 .grid > div:nth-child(odd){
     background: #ddd;
-}
+}*/
